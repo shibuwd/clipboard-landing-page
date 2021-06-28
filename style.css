@@ -383,4 +383,38 @@ footer {
 
 }
 
+@media only screen and (min-width: 1280px) {
+    .hero-container p {
+        padding: 0rem 21rem;
+    }
+
+    .services p {
+        padding: 1rem 18rem;
+        margin-bottom: 3rem;
+    }
+
+    .service p {
+        padding: 0 5rem;
+    }
+
+    .service-img {
+        max-width: 720px;
+        margin-left: -14rem;
+    }
+
+    .service-text {
+        padding: 0 2rem;
+    }
+
+    .access-clipboard p {
+        padding: 1rem 20rem;
+    }
+
+    .download-links p {
+        text-align: center;
+        padding: 1rem 20rem;
+    }
+}
+
+
 /* end media query */
