@@ -57,13 +57,6 @@ li {
     list-style: none;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 /* hero section */
 .hero-container {
     display: flex;
@@ -245,9 +238,6 @@ footer {
 .footer-logo {
     transform: scale(.4);
 }
-.useful-links ul {
-    text-align: center; 
-}
 .links a{
     color: var(--dark-grayish-blue);
     transition: 0.4s cubic-bezier(0.5, 1, 0.89, 1);
@@ -260,12 +250,12 @@ footer {
     text-align: center;
     margin-bottom: 1rem;
 }
-.social-icons ul{
+.social-icons {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
-    margin: 3rem 0;
+    gap: 2rem;  
 }
 .social-icons i {
     color: var(--dark-grayish-blue);
@@ -356,65 +346,56 @@ footer {
         text-align: center;
         padding: 1rem 8rem;
     }
+    footer {
+       width: 100vw;
+    }
     .download-links .btn {
         flex-direction: row;
     }
     .footer-container {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: row;
-        width: 100%;
-        padding: 0 2rem;
     }
-    .useful-links {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 3rem;
+    .footer-logo {
+        margin-left: -10rem;
     }
-    .useful-links ul li {
+    .links {
+        column-count: 3;
+        gap: 2rem;
+        margin-right: 5rem;
+    }
+    .links ul li {
         text-align: left;
+        margin-bottom: 1rem;
     }
-    .links:nth-of-type(3) {
-        margin-top: -2.3rem;
-    }
-    .social-icons ul {
-        gap: 2rem; 
-    }
-
 }
 
 @media only screen and (min-width: 1280px) {
     .hero-container p {
         padding: 0rem 21rem;
     }
-
     .services p {
         padding: 1rem 18rem;
         margin-bottom: 3rem;
     }
-
     .service p {
         padding: 0 5rem;
     }
-
     .service-img {
         max-width: 880px;
         margin-left: -14rem;
     }
-
     .service-text {
         padding: 0 2rem;
     }
       .access-img {
           max-width: 1150px;
       }
-
     .access-clipboard p {
         padding: 1rem 20rem;
     }
-
     .download-links p {
         text-align: center;
         padding: 1rem 20rem;
@@ -425,36 +406,29 @@ footer {
     .hero-container p {
         padding: 0rem 25rem;
     }
-
     .services p {
         padding: 1rem 21rem;
         margin-bottom: 3rem;
     }
-
     .service p {
         padding: 0 5rem;
     }
-
     .service-img {
         max-width: 900px;
         margin-left: -20rem;
     }
-
     .service-text {
         padding: 0 2rem;
     }
       .access-img {
           max-width: 1250px;
       }
-
     .access-clipboard p {
         padding: 1rem 21rem;
     }
-
     .workflow p:nth-of-type(1) {
         padding: 0 6rem;
     }
-
     .download-links p {
         text-align: center;
         padding: 1rem 22rem;
@@ -465,32 +439,25 @@ footer {
     .hero-container p {
         padding: 0rem 27rem;
     }
-
     .services p {
         padding: 1rem 23rem;
     }
-
     .service p {
         padding: 0 5rem;
     }
-
     .service-img {
         max-width: 940px;
         margin-left: -25rem;
     }
-
-      .access-img {
+     .access-img {
           max-width: 1320px;
       }
-
     .access-clipboard p {
         padding: 1rem 24rem;
     }
-
     .workflow p:nth-of-type(1) {
         padding: 0 6rem;
     }
-
     .download-links p {
         text-align: center;
         padding: 1rem 24rem;
